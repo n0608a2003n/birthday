@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Sofia|Audiowide' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>nandos</title>
+    <style>
+        .mySlides {display:none;}
+
+    </style>
+</head>
+<body style="background-color: pink;text-align: center;">
+  <br><br>
+    <h1 style="font-family: sofia;">Thank you for being being born <img src="images/heart_with_ribbon_48px.png" alt=""></h1>
+    <br><br>
+      
+      <div class="w3-content w3-display-container">
+      <div class="w3-display-container mySlides">
+        <img src="images/titanic.jpg" style="width:100%">
+        <div style="font-family: audiowide;" class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-light-grey">
+          TITANIC
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="images/stupid.jpg" style="width:100%">
+        <div style="font-family: audiowide;" class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-light-grey">
+          STOOPID
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="images/NOCM.jpg" style="width:100%">
+        <div style="font-family: audiowide;" class="w3-display-topleft w3-large w3-container w3-padding-16 w3-light-grey">
+          NO COMMENTS...
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="images/GARBA.jpg" style="width:100%">
+        <div style="font-family: audiowide;" class="w3-display-topright w3-large w3-container w3-padding-16 w3-light-grey">
+          GARBA GURL
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="images/kewl.jpg" style="width:100%;">
+        <div style="font-family: audiowide;" class="w3-display-topright w3-large w3-container w3-padding-16 w3-light-grey">
+          KEWL
+        </div>
+      </div>
+      
+      <button class="w3-button w3-display-left w3-light-grey" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-light-grey" onclick="plusDivs(1)">&#10095;</button>
+      <br><br>
+      </div>
+      
+      <br>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+      <h2 style="text-align: center;font-family: audiowide;">How are you feeling today?</h2>
+      
+      <div style="text-decoration: none;">
+        <a style="text-decoration: none;" href="happy.html" class="btn">
+          <img src="images/happy_32px.png" alt="">
+        </a>
+        <a style="text-decoration: none;" href="motivation.html" class="btn">
+          <img src="images/sad_48px.png" alt="">
+        </a>
+        <a style="text-decoration: none;" href="bleh.html" class="btn">
+          <img src="images/yawning_face_48px.png" alt="">
+        </a>
+    </div>
+</body>
+</html>
